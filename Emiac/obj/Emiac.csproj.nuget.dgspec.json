@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fotters\\Source\\Repos\\emias_ebani\\Emiac\\Emiac.csproj": {}
+    "C:\\Users\\Fotters\\source\\repos\\emias_ebani\\Emiac\\Emiac.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fotters\\Source\\Repos\\emias_ebani\\Emiac\\Emiac.csproj": {
+    "C:\\Users\\Fotters\\source\\repos\\emias_ebani\\Emiac\\Emiac.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fotters\\Source\\Repos\\emias_ebani\\Emiac\\Emiac.csproj",
+        "projectUniqueName": "C:\\Users\\Fotters\\source\\repos\\emias_ebani\\Emiac\\Emiac.csproj",
         "projectName": "Emiac",
-        "projectPath": "C:\\Users\\Fotters\\Source\\Repos\\emias_ebani\\Emiac\\Emiac.csproj",
+        "projectPath": "C:\\Users\\Fotters\\source\\repos\\emias_ebani\\Emiac\\Emiac.csproj",
         "packagesPath": "C:\\Users\\Fotters\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fotters\\Source\\Repos\\emias_ebani\\Emiac\\obj\\",
+        "outputPath": "C:\\Users\\Fotters\\source\\repos\\emias_ebani\\Emiac\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Fotters\\AppData\\Roaming\\NuGet\\NuGet.Config",
