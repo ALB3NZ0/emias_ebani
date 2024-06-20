@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Emiac")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b35bb1feb585b6ac036beed2524f41af95093654")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3db3e05eff1dccecfd85d92927597512213bca5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Emiac")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Emiac")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -5,52 +5,682 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="PatientWindow" Height="850" Width="1500">
+        
+        xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+        Title="MainWindow" Height="1050" Width="1900">
+
     <Window.Resources>
-        <!-- Определение стиля для кнопок окна -->
-        <Style x:Key="WindowButton" TargetType="Button">
-            <Setter Property="Template">
+        <Style x:Key="CustomComboBoxStyle" TargetType="ComboBox">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#007BFE"/>
+            <Setter Property="BorderBrush" Value="#007BFE"/>
+            <Setter Property="ItemTemplate">
                 <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Image Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Tag}" Width="15" Height="15"/>
-                    </ControlTemplate>
+                    <DataTemplate>
+                        <TextBlock FontFamily="Inter" Foreground="White" Margin="2" Text="{Binding FirstName}"/>
+                    </DataTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
     </Window.Resources>
 
+
+
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="Auto"/>
+            <!-- Левая панель меню -->
             <ColumnDefinition Width="*"/>
+            <!-- Основное содержимое -->
         </Grid.ColumnDefinitions>
 
-        <StackPanel Background="#1A73E8" Width="320" HorizontalAlignment="Left" Grid.ColumnSpan="2">
-            <TextBlock Text="ЕМИАС                               в. 1.0" Foreground="White" FontSize="20" Margin="10" />
-            <Image Source="pack://application:,,,/Images/image.png" Width="180" Height="auto" Margin="10"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="1044"/>
+            <!-- Заголовок -->
+            <RowDefinition/>
+            <!-- Основной контент -->
+            <RowDefinition Height="Auto" MinHeight="35"/>
+            <!-- Подвал (например, поисковая строка) -->
+        </Grid.RowDefinitions>
 
-            <TreeView Background="#1A73E8" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="4" 
-                      SelectedItemChanged="TreeView_SelectedItemChanged">
-                <TreeViewItem Header="Главная" Foreground="#E4FFFFFF" FontFamily="Inter" Width="316">
-                    <TreeViewItem Header="Записи и направления" Foreground="#E4FFFFFF" FontFamily="Inter" />
-                    <TreeViewItem Header="Рецепты" Foreground="#E4FFFFFF" FontFamily="Inter" />
-                    <TreeViewItem Header="Диспансеризация" Foreground="#E4FFFFFF" FontFamily="Inter" />
-                </TreeViewItem>
-                <TreeViewItem Header="Медкарта" Foreground="#E4FFFFFF" FontFamily="Inter">
-                    <TreeViewItem Header="Приёмы" Foreground="#E4FFFFFF" FontFamily="Inter" />
-                    <TreeViewItem Header="Анализы" Foreground="#E4FFFFFF" FontFamily="Inter" />
-                    <TreeViewItem Header="Исследования" Foreground="#E4FFFFFF" FontFamily="Inter" />
-                </TreeViewItem>
-            </TreeView>
-        </StackPanel>
+        <!-- Левая панель меню (BlueMenu) -->
+        <TextBlock x:Name="BlueMenu"
+               Width="390" Height="1098"
+               HorizontalAlignment="Left" VerticalAlignment="Center"
+               Background="#007BFE"
+               Foreground="White"
+               FontWeight="Bold"
+               FontSize="36"
+               TextWrapping="Wrap"/>
 
-        <!-- Кнопки закрытия, сворачивания и разворачивания окна -->
-        <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" Grid.Column="1" Margin="10">
-            <Button Style="{StaticResource WindowButton}" Click="CloseButton_Click" Tag="pack://application:,,,/Images/path_to_close_icon.png" Height="814"/>
-            <Button Style="{StaticResource WindowButton}" Click="MinimizeButton_Click" Tag="pack://application:,,,/Images/path_to_minimize_icon.png"/>
-            <Button Style="{StaticResource WindowButton}" Click="MaximizeButton_Click" Tag="pack://application:,,,/Images/path_to_maximize_icon.png"/>
-        </StackPanel>
+        <!-- Заголовок (EMIAS) -->
+        <TextBlock x:Name="EMIAS"
+               Margin="22,10,0,0"
+               Width="126" Height="32"
+               HorizontalAlignment="Left" VerticalAlignment="Top"
+               Text="ЕМИАС"
+               FontSize="24"
+               FontWeight="Bold"
+               Foreground="White"/>
 
-        <TextBlock Foreground="White" Text="Полис ОМС:" Margin="10,808,111,0" FontSize="14" VerticalAlignment="Top" Height="17" />
+        <!-- Делитель -->
+        <TextBlock Margin="15,25,0,0"
+               Width="360" Height="45"
+               HorizontalAlignment="Left" VerticalAlignment="Top"
+               Text="__________________________________________"
+               FontSize="22"
+               Foreground="White"/>
+
+        <!-- Версия -->
+        <TextBlock Margin="306,13,0,0"
+               Width="84" Height="58"
+               HorizontalAlignment="Left" VerticalAlignment="Top"
+               Text="в. 1.0"
+               FontSize="24"
+               FontWeight="Bold"
+               Foreground="White"/>
+
+        <!-- TreeView (дерево) -->
+        <TreeView x:Name="Tree"
+              Grid.Row="1"
+              Margin="10,10,0,75"
+              Width="360"
+              HorizontalAlignment="Left"
+              FontSize="22"
+              Background="{x:Null}"
+              BorderBrush="{x:Null}" Grid.RowSpan="2"/>
+
+        <!-- Основные пункты меню -->
+        <TreeViewItem x:Name="Glavn"
+                  Header="Главная"
+                  FontSize="24"
+                  Margin="15,115,1559,881"
+                  Background="{x:Null}"
+                  Foreground="White">
+            <Button x:Name="Zapisi_naprav"
+                Content="Записи и направления"
+                Background="{x:Null}"
+                Foreground="White"
+                BorderBrush="{x:Null}"/>
+            <Button x:Name="Recept"
+                Content="Рецепты"
+                Background="{x:Null}"
+                Foreground="White"
+                BorderBrush="{x:Null}"/>
+            <Button x:Name="Dis"
+                Content="Диспансеризация"
+                Background="{x:Null}"
+                Foreground="White"
+                BorderBrush="{x:Null}"/>
+        </TreeViewItem>
+
+        <!-- Медкарта -->
+        <TreeViewItem x:Name="MedCard"
+                  Header="Медкарта"
+                  FontSize="24"
+                  Margin="10,254,1559,738"
+                  Background="{x:Null}"
+                  Foreground="White">
+            <Button x:Name="Priem"
+                Content="Приёмы"
+                Background="{x:Null}"
+                Foreground="White"
+                BorderBrush="{x:Null}"/>
+            <Button x:Name="Analiz"
+                Content="Анализы"
+                Background="{x:Null}"
+                Foreground="White"
+                BorderBrush="{x:Null}"/>
+            <Button x:Name="Issled"
+                Content="Исследования"
+                Background="{x:Null}"
+                Foreground="White"
+                BorderBrush="{x:Null}"/>
+        </TreeViewItem>
+
+        <!-- Поисковая строка -->
+        <TextBox x:Name="SearchBox"
+             Margin="10,990,0,0"
+             Width="356" Height="44"
+             HorizontalAlignment="Left" VerticalAlignment="Top"
+             Text="Полис ОМС:"
+             FontSize="22"
+             Background="{x:Null}"
+             BorderBrush="{x:Null}"
+             SelectionBrush="{x:Null}"
+             Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="45" Margin="15,937,0,0" TextWrapping="Wrap" Text="__________________________________________" VerticalAlignment="Top" Width="360" Foreground="White" FontSize="22"/>
+        <TextBlock Foreground="#007BFE" Text="Полис ОМС:" Margin="147,996,1682,0" FontSize="14"
+                   VerticalAlignment="Top" Height="80" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+            <ComboBox Name="CurrentUser" Foreground="#007BFE" Style="{StaticResource CustomComboBoxStyle}" Height="13" Width="74" RenderTransformOrigin="0.5,0.5">
+                <ComboBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </ComboBox.RenderTransform>
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock FontFamily="Inter" Foreground="#007BFE" Margin="2" Text="{Binding FirstName}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+                <b:Interaction.Triggers>
+                    <b:EventTrigger EventName="SelectionChanged">
+                        <b:CallMethodAction
+                            TargetObject="{Binding}"
+                            MethodName="SwithAcc" />
+                    </b:EventTrigger>
+                </b:Interaction.Triggers>
+            </ComboBox>
+        </TextBlock>
+        <Button x:Name="Nastroiki" Content="⚙" HorizontalAlignment="Left" Height="44" Margin="327,980,0,0" VerticalAlignment="Top" Width="48" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Height="41" Margin="411,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Foreground="Black" FontSize="36"><Run Text="Запис"/><Run Language="ru-ru" Text="ь"/></TextBlock>
+        <Button x:Name="Krest" Content="✕" HorizontalAlignment="Left" Height="32" Margin="1865,0,0,0" VerticalAlignment="Top" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="22"/>
+        <Button x:Name="Kvadrat" Content="☐" HorizontalAlignment="Left" Height="32" Margin="1830,0,0,0" VerticalAlignment="Top" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="20"/>
+        <Button x:Name="Minus" Content="—" HorizontalAlignment="Left" Height="32" Margin="1796,0,0,0" VerticalAlignment="Top" Width="34" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="200" Margin="411,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1471" Foreground="{x:Null}" Background="#FFF1F1F1"/>
+        <Slider HorizontalAlignment="Left" Height="28" Margin="411,252,0,0" VerticalAlignment="Top" Width="1471"/>
+        <TextBlock HorizontalAlignment="Left" Height="54" Margin="411,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="361" FontSize="36"><Run Language="ru-ru" Text="Действующие записи"/></TextBlock>
+        <DatePicker x:Name="S" HorizontalAlignment="Center" Height="40" Margin="0,275,0,0" VerticalAlignment="Top" Width="302" FontSize="20" Text="Записи с:"/>
+        <DatePicker x:Name="PO" HorizontalAlignment="Left" Height="40" Margin="1106,275,0,0" VerticalAlignment="Top" Width="302" FontSize="20" Text="Записи с:"/>
+
+        <TextBlock x:Name="June"
+           Text=" Июнь 2024"
+           Width="480"
+           Height="295"
+           Margin="411,325,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           FontSize="24"
+           Foreground="Black"
+           Background="#FFF1F1F1" />
+
+        <TextBlock x:Name="July"
+           Text=" Июль 2024"
+           Width="480"
+           Height="295"
+           Margin="906,325,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           FontSize="24"
+           Foreground="Black"
+           Background="#FFF1F1F1" />
+
+        <TextBlock x:Name="August"
+           Text=" Август 2024"
+           Width="480"
+           Height="295"
+           Margin="1402,325,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           FontSize="24"
+           Foreground="Black"
+           Background="#FFF1F1F1" />
+
+        <TextBlock Text="Архивные записи"
+           Width="308"
+           Height="44"
+           Margin="411,627,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           FontSize="36" />
+
+        <DatePicker x:Name="S1" HorizontalAlignment="Left" Height="40" Margin="719,635,0,0" VerticalAlignment="Top" Width="302" FontSize="20" Text="Записи с:"/>
+        <DatePicker x:Name="PO1" HorizontalAlignment="Left" Height="40" Margin="1027,635,0,0" VerticalAlignment="Top" Width="302" FontSize="20" Text="Записи с:"/>
+        <TextBlock x:Name="March"
+           Text=" Март 2024"
+           Width="480"
+           Height="295"
+           Margin="411,686,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           FontSize="24"
+           Foreground="Black"
+           Background="#FFF1F1F1" />
+
+        <TextBlock x:Name="April"
+           Text=" Апрель 2024"
+           Width="480"
+           Height="295"
+           Margin="906,686,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           FontSize="24"
+           Foreground="Black"
+           Background="#FFF1F1F1" />
+
+        <TextBlock x:Name="May"
+           Text=" Май 2024"
+           Width="480"
+           Height="295"
+           Margin="1402,686,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           FontSize="24"
+           Foreground="Black"
+           Background="#FFF1F1F1" />
+
+        <Button x:Name="ZapisNaPriem" Content="Записаться на приём" HorizontalAlignment="Left" Height="38" Margin="411,988,0,0" VerticalAlignment="Top" Width="1471" FontSize="24" BorderBrush="{x:Null}" Background="#007BFE" Foreground="White"/>
+
+        <TextBlock x:Name="_1Zapis"
+           Text=""
+           Width="458"
+           Height="114"
+           Margin="422,364,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           Background="White"
+           FontSize="16" />
+
+        <TextBlock x:Name="_2Zapis"
+           Text=""
+           Width="458"
+           Height="114"
+           Margin="422,0,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Center"
+           TextWrapping="Wrap"
+           Background="White" />
+
+        <TextBlock x:Name="Vrach1"
+           Text="Врач-дерматолог"
+           Width="134"
+           Height="22"
+           Margin="584,370,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           FontSize="16" />
+
+        <TextBlock x:Name="NameVracha1"
+           Text="Громова Вероника Вадимовна"
+           Width="200"
+           Height="19"
+           Margin="431,397,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           FontSize="14"
+           Foreground="#FF797979" />
+
+        <TextBlock x:Name="Data1"
+           Text="27 июня"
+           Width="132"
+           Height="22"
+           Margin="431,416,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           FontSize="14"
+           Foreground="#FF797979" />
+
+        <TextBlock x:Name="Adress1"
+           Text="Москва, Староволынская улица, д. 10"
+           Width="166"
+           Height="41"
+           Margin="704,397,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           FontSize="14"
+           Foreground="#FF797979" />
+
+        <Button x:Name="Perenos1" Content="Перенести" HorizontalAlignment="Left" Margin="431,443,0,0" VerticalAlignment="Top" Width="213" Background="#007BFE" Foreground="White" FontSize="14" BorderBrush="{x:Null}" Height="23"/>
+        <Button x:Name="Otmena1" Content="Отменить" HorizontalAlignment="Left" Margin="657,443,0,0" VerticalAlignment="Top" Width="213" Foreground="White" BorderBrush="{x:Null}" Background="Red" FontSize="14" Height="23"/>
+        <TextBlock x:Name="_3Zapis"
+           Text="..."
+           Width="458"
+           Height="114"
+           Margin="918,364,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           Background="White" />
+
+        <TextBlock x:Name="_4Zapis"
+           Text="..."
+           Width="458"
+           Height="114"
+           Margin="918,0,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Center"
+           TextWrapping="Wrap"
+           Background="White" />
+
+        <TextBlock x:Name="_5Zapis"
+           Text="..."
+           Width="458"
+           Height="114"
+           Margin="422,720,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           Background="White" />
+
+        <TextBlock x:Name="_6Zapis"
+           Text="..."
+           Width="458"
+           Height="114"
+           Margin="422,852,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           Background="White" />
+
+        <TextBlock x:Name="_7Zapis"
+           Text="..."
+           Width="458"
+           Height="114"
+           Margin="917,720,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextWrapping="Wrap"
+           Background="White" />
+
+        <TextBlock x:Name="Vrach2"
+           Text="Врач-терапевт"
+           Width="110"
+           Height="22"
+           Margin="596,495,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="16"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="NameVracha2"
+           Text="Смирнова Анастасия Олеговна"
+           Width="200"
+           Height="19"
+           Margin="431,522,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           Foreground="#FF797979"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="Data2"
+           Text="30 июня"
+           Width="132"
+           Height="22"
+           Margin="431,541,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           Foreground="#FF797979"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="Adress2"
+           Text="Москва, Староволынская улица, д. 10"
+           Width="166"
+           Height="41"
+           Margin="704,522,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           Foreground="#FF797979"
+           TextWrapping="Wrap" />
+
+        <Button x:Name="Perenos2" Content="Перенести" HorizontalAlignment="Left" Margin="431,568,0,0" VerticalAlignment="Top" Width="213" Background="#007BFE" Foreground="White" FontSize="14" BorderBrush="{x:Null}" Height="23"/>
+        <Button x:Name="Otmena2" Content="Отменить" HorizontalAlignment="Left" Margin="657,568,0,0" VerticalAlignment="Top" Width="213" Foreground="White" BorderBrush="{x:Null}" Background="Red" FontSize="14" Height="23"/>
+        <TextBlock x:Name="Vrach3"
+           Text="Врач-невролог"
+           Width="116"
+           Height="22"
+           Margin="1088,370,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="16"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="NameVracha3"
+           Text="Крылов Александр Юрьевич"
+           Width="200"
+           Height="19"
+           Margin="927,397,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           Foreground="#FF797979"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="Data3"
+           Text="3 июля"
+           Width="132"
+           Height="22"
+           Margin="927,416,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           Foreground="#FF797979"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="Adress3"
+           Text="Москва, Поклонная улица, д. 8, корпус 3"
+           Width="140"
+           Height="41"
+           Margin="1218,397,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           Foreground="#FF797979"
+           TextWrapping="Wrap" />
+
+        <Button x:Name="Perenos3" Content="Перенести" HorizontalAlignment="Left" Margin="927,443,0,0" VerticalAlignment="Top" Width="213" Background="#007BFE" Foreground="White" FontSize="14" BorderBrush="{x:Null}" Height="23"/>
+        <Button x:Name="Otmena3" Content="Отменить" HorizontalAlignment="Left" Margin="1150,443,0,0" VerticalAlignment="Top" Width="213" Foreground="White" BorderBrush="{x:Null}" Background="Red" FontSize="14" Height="23"/>
+
+        <TextBlock x:Name="Vrach4"
+           Text="Аллерголог-иммунолог"
+           FontSize="16"
+           Foreground="Black"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           Margin="1058,495,0,0"
+           Width="178"
+           Height="22"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="NameVracha4"
+           Text="Андреева София Владимировна"
+           FontSize="14"
+           Foreground="#FF797979"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           Margin="927,517,0,0"
+           Width="213"
+           Height="19"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="Data4"
+           Text="10 июля"
+           FontSize="14"
+           Foreground="#FF797979"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Center"
+           Margin="927,0,0,0"
+           Width="132"
+           Height="22"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="Adress4"
+           Text="Москва, Поклонная улица, д. 8, корпус 3"
+           FontSize="14"
+           Foreground="#FF797979"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           Margin="1218,517,0,0"
+           Width="140"
+           Height="38"
+           TextWrapping="Wrap" />
+
+        <Button x:Name="Perenos4" Content="Перенести" HorizontalAlignment="Left" Margin="927,568,0,0" VerticalAlignment="Top" Width="213" Background="#007BFE" Foreground="White" FontSize="14" BorderBrush="{x:Null}" Height="23"/>
+        <Button x:Name="Otmena3_Копировать" Content="Отменить" HorizontalAlignment="Left" Margin="1150,443,0,0" VerticalAlignment="Top" Width="213" Foreground="White" BorderBrush="{x:Null}" Background="Red" FontSize="14" Height="23"/>
+        <Button x:Name="Otmena8" Content="Отменить" HorizontalAlignment="Left" Margin="1150,443,0,0" VerticalAlignment="Top" Width="213" Foreground="White" BorderBrush="{x:Null}" Background="Red" FontSize="14" Height="23"/>
+        <Button x:Name="Otmena4" Content="Отменить" HorizontalAlignment="Left" Margin="1150,568,0,0" VerticalAlignment="Top" Width="214" Foreground="White" BorderBrush="{x:Null}" Background="Red" FontSize="14" Height="23"/>
+
+        <TextBlock x:Name="NetZapisi1"
+           Text="На этот месяц записей нет"
+           Width="296"
+           Height="35"
+           Margin="1494,455,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="24"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="Vrach5"
+           Text="Врач-терапевт"
+           Width="110"
+           Height="22"
+           Margin="596,729,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="16"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="NameVracha5"
+           Text="Соколов Алексей Михайлович"
+           Width="200"
+           Height="19"
+           Margin="431,756,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           Foreground="#FF797979"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="Data5"
+           Text="16 марта"
+           Width="132"
+           Height="22"
+           Margin="431,775,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           Foreground="#FF797979"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="Adress5"
+           Text="Москва, Староволынская улица, д. 10"
+           Width="166"
+           Height="41"
+           Margin="704,756,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           TextWrapping="Wrap" />
+
+        <Button x:Name="Perenos5" Content="Перенести" HorizontalAlignment="Left" Margin="431,802,0,0" VerticalAlignment="Top" Width="213" Background="#007BFE" Foreground="White" FontSize="14" BorderBrush="{x:Null}" Height="23"/>
+        <Button x:Name="Otmena5" Content="Отменить" HorizontalAlignment="Left" Margin="657,802,0,0" VerticalAlignment="Top" Width="213" Foreground="White" BorderBrush="{x:Null}" Background="Red" FontSize="14" Height="23"/>
+
+        <TextBlock x:Name="Vrach6"
+           Text="Врач-травматолог"
+           Width="136"
+           Height="22"
+           Margin="583,861,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="16"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="NameVracha6"
+           Text="Комолов Матвей Владимирович"
+           Width="213"
+           Height="19"
+           Margin="431,888,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           Foreground="#FF797979"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="Data6"
+           Text="20 марта"
+           Width="132"
+           Height="22"
+           Margin="433,907,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           Foreground="#FF797979"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="Adress6"
+           Text="Москва, Первомайская улица, д. 13"
+           Width="166"
+           Height="41"
+           Margin="704,888,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           TextWrapping="Wrap" />
+
+        <Button x:Name="Perenos6" Content="Перенести" HorizontalAlignment="Left" Margin="431,934,0,0" VerticalAlignment="Top" Width="213" Background="#007BFE" Foreground="White" FontSize="14" BorderBrush="{x:Null}" Height="23"/>
+        <Button x:Name="Otmena6" Content="Отменить" HorizontalAlignment="Left" Margin="657,934,0,0" VerticalAlignment="Top" Width="213" Foreground="White" BorderBrush="{x:Null}" Background="Red" FontSize="14" Height="23"/>
+
+        <TextBlock x:Name="Vrach7"
+           Text="Офтальмолог"
+           Width="103"
+           Height="22"
+           Margin="1095,729,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="16"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="NameVracha7"
+           Text="Соколов Алексей Михайлович"
+           Width="200"
+           Height="19"
+           Margin="927,756,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           Foreground="#FF797979"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="Data7"
+           Text="16 марта"
+           Width="132"
+           Height="22"
+           Margin="927,775,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           Foreground="#FF797979"
+           TextWrapping="Wrap" />
+
+        <TextBlock x:Name="Adress7"
+           Text="Москва, Староволынская улица, д. 10"
+           Width="166"
+           Height="41"
+           Margin="1198,756,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           FontSize="14"
+           TextWrapping="Wrap" />
+
+        <Button x:Name="Perenos7" Content="Перенести" HorizontalAlignment="Left" Margin="927,802,0,0" VerticalAlignment="Top" Width="213" Background="#007BFE" Foreground="White" FontSize="14" BorderBrush="{x:Null}" Height="23"/>
+        <Button x:Name="Otmena7" Content="Отменить" HorizontalAlignment="Left" Margin="1151,802,0,0" VerticalAlignment="Top" Width="213" Foreground="White" BorderBrush="{x:Null}" Background="Red" FontSize="14" Height="23"/>
+        <TextBlock x:Name="NetZapisi2" HorizontalAlignment="Left" Height="35" Margin="1494,808,0,0" TextWrapping="Wrap" Text="На этот месяц записей нет" VerticalAlignment="Top" Width="296" FontSize="24"/>
+
     </Grid>
 </Window>
+
