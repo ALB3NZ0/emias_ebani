@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="220" Width="400">
+    <WindowChrome.WindowChrome>
+        <WindowChrome
+            CaptionHeight="0"
+            ResizeBorderThickness="2"
+            GlassFrameThickness="0"
+            CornerRadius="0" />
+    </WindowChrome.WindowChrome>
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Rectangle Grid.RowSpan="3" Fill="#FF007BFE" />
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="ЕМИАС" VerticalAlignment="Top" Height="20"
+                   Width="400" Grid.ColumnSpan="6" TextAlignment="Center" FontFamily="Inter" FontSize="20"
+                   Foreground="White" Grid.Row="1" FontWeight="Bold" />
+        <TextBlock HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap"
+                   Text="Единая медицинская информацонно-аналитическая система " VerticalAlignment="Center" Width="400" TextAlignment="Center" FontSize="16" FontFamily="Inter" Foreground="White"
+                   FontStretch="SemiExpanded" FontWeight="Light" Height="39" />
+        <StackPanel Grid.Row="3" Margin="10">
+            <TextBox x:Name="NumberOfDoctor" Width="360" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"
+         Text="Номер сотрудника" Margin="0,5,0,5" GotFocus="ClearText"/>
+            <TextBox x:Name="PasswordDoctor" Width="360" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"
+         Text="Пароль" Margin="0,5,0,5" GotFocus="ClearText"/>
+            <StackPanel Orientation="Horizontal" Width="356">
+                <Button Content="Войти" Width="167" Margin="5" Background="#FF007BFE" Height="29"/>
+                <Button Content="Я пациент" Width="175" Margin="5" Background="#FF007BFE" Height="29" Click="Button_Click"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>

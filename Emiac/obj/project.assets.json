@@ -11479,24 +11479,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Рустам\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\rhali\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Рустам\\source\\repos\\Emiac\\Emiac\\Emiac.csproj",
+      "projectUniqueName": "C:\\Users\\rhali\\Source\\Repos\\emias_ebani\\Emiac\\Emiac.csproj",
       "projectName": "Emiac",
-      "projectPath": "C:\\Users\\Рустам\\source\\repos\\Emiac\\Emiac\\Emiac.csproj",
-      "packagesPath": "C:\\Users\\Рустам\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Рустам\\source\\repos\\Emiac\\Emiac\\obj\\",
+      "projectPath": "C:\\Users\\rhali\\Source\\Repos\\emias_ebani\\Emiac\\Emiac.csproj",
+      "packagesPath": "C:\\Users\\rhali\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rhali\\Source\\Repos\\emias_ebani\\Emiac\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Рустам\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\rhali\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
