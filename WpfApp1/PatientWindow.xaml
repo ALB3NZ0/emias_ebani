@@ -1,0 +1,56 @@
+﻿<Window x:Class="WpfApp1.PatientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="PatientWindow" Height="850" Width="1500">
+    <Window.Resources>
+        <!-- Определение стиля для кнопок окна -->
+        <Style x:Key="WindowButton" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Image Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Tag}" Width="15" Height="15"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Background="#1A73E8" Width="320" HorizontalAlignment="Left" Grid.ColumnSpan="2">
+            <TextBlock Text="ЕМИАС                               в. 1.0" Foreground="White" FontSize="20" Margin="10" />
+            <Image Source="pack://application:,,,/Images/image.png" Width="180" Height="auto" Margin="10"/>
+
+            <TreeView Background="#1A73E8" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="4" 
+                      SelectedItemChanged="TreeView_SelectedItemChanged">
+                <TreeViewItem Header="Главная" Foreground="#E4FFFFFF" FontFamily="Inter" Width="316">
+                    <TreeViewItem Header="Записи и направления" Foreground="#E4FFFFFF" FontFamily="Inter" />
+                    <TreeViewItem Header="Рецепты" Foreground="#E4FFFFFF" FontFamily="Inter" />
+                    <TreeViewItem Header="Диспансеризация" Foreground="#E4FFFFFF" FontFamily="Inter" />
+                </TreeViewItem>
+                <TreeViewItem Header="Медкарта" Foreground="#E4FFFFFF" FontFamily="Inter">
+                    <TreeViewItem Header="Приёмы" Foreground="#E4FFFFFF" FontFamily="Inter" />
+                    <TreeViewItem Header="Анализы" Foreground="#E4FFFFFF" FontFamily="Inter" />
+                    <TreeViewItem Header="Исследования" Foreground="#E4FFFFFF" FontFamily="Inter" />
+                </TreeViewItem>
+            </TreeView>
+        </StackPanel>
+
+        <!-- Кнопки закрытия, сворачивания и разворачивания окна -->
+        <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" Grid.Column="1" Margin="10">
+            <Button Style="{StaticResource WindowButton}" Click="CloseButton_Click" Tag="pack://application:,,,/Images/path_to_close_icon.png" Height="814"/>
+            <Button Style="{StaticResource WindowButton}" Click="MinimizeButton_Click" Tag="pack://application:,,,/Images/path_to_minimize_icon.png"/>
+            <Button Style="{StaticResource WindowButton}" Click="MaximizeButton_Click" Tag="pack://application:,,,/Images/path_to_maximize_icon.png"/>
+        </StackPanel>
+
+        <TextBlock Foreground="White" Text="Полис ОМС:" Margin="10,808,111,0" FontSize="14" VerticalAlignment="Top" Height="17" />
+    </Grid>
+</Window>

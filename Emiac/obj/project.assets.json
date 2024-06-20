@@ -11479,24 +11479,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Рустам\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Fotters\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Рустам\\source\\repos\\Emiac\\Emiac\\Emiac.csproj",
+      "projectUniqueName": "C:\\Users\\Fotters\\Source\\Repos\\emias_ebani\\Emiac\\Emiac.csproj",
       "projectName": "Emiac",
-      "projectPath": "C:\\Users\\Рустам\\source\\repos\\Emiac\\Emiac\\Emiac.csproj",
-      "packagesPath": "C:\\Users\\Рустам\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Рустам\\source\\repos\\Emiac\\Emiac\\obj\\",
+      "projectPath": "C:\\Users\\Fotters\\Source\\Repos\\emias_ebani\\Emiac\\Emiac.csproj",
+      "packagesPath": "C:\\Users\\Fotters\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Fotters\\Source\\Repos\\emias_ebani\\Emiac\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Рустам\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Fotters\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11504,7 +11499,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11517,11 +11511,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -11570,7 +11559,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
