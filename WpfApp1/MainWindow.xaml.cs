@@ -24,5 +24,18 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void ClearText(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            textBox.Text = string.Empty;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            WindowPatient windowPatient = new WindowPatient();
+            windowPatient.Show();
+            Close();
+        }
     }
 }
