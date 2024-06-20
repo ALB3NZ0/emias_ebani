@@ -1,0 +1,480 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CFB36B45-D19D-42AB-9457-20F98A62C2DF}|WpfApp1\\WpfApp1.csproj|C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CFB36B45-D19D-42AB-9457-20F98A62C2DF}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFB36B45-D19D-42AB-9457-20F98A62C2DF}|WpfApp1\\WpfApp1.csproj|C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\wpfapp1\\viewmodel\\helpers\\apihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB36B45-D19D-42AB-9457-20F98A62C2DF}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\viewmodel\\helpers\\apihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFB36B45-D19D-42AB-9457-20F98A62C2DF}|WpfApp1\\WpfApp1.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB36B45-D19D-42AB-9457-20F98A62C2DF}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\models\\analysdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\models\\analysdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\controllers\\directionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\controllers\\directionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\controllers\\specialitescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\controllers\\specialitescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\controllers\\researchdocumentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\controllers\\researchdocumentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\controllers\\appointmentdocumentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\controllers\\appointmentdocumentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\controllers\\analysdocumentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\controllers\\analysdocumentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\models\\emiascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\models\\emiascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\models\\specialite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\models\\specialite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\models\\researchdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\models\\researchdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\models\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\models\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|c:\\users\\\u0440\u0443\u0441\u0442\u0430\u043C\\source\\repos\\emiac\\emiac\\models\\appointmentdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D3788E-BFD8-48C8-A37A-4A3DF79D2539}|Emiac\\Emiac.csproj|solutionrelative:emiac\\models\\appointmentdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 244,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApiHelper.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\WpfApp1\\ViewModel\\Helpers\\ApiHelper.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\ViewModel\\Helpers\\ApiHelper.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\WpfApp1\\ViewModel\\Helpers\\ApiHelper.cs",
+              "RelativeToolTip": "WpfApp1\\ViewModel\\Helpers\\ApiHelper.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T13:10:02.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\WpfApp1\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\WpfApp1\\MainWindow.xaml",
+              "RelativeToolTip": "WpfApp1\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-20T12:57:12.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\WpfApp1\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\WpfApp1\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp1\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T12:57:12.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "Emiac\\Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\Admin.cs",
+              "RelativeToolTip": "Emiac\\Models\\Admin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:04:51.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AnalysDocument.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\AnalysDocument.cs",
+              "RelativeDocumentMoniker": "Emiac\\Models\\AnalysDocument.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\AnalysDocument.cs",
+              "RelativeToolTip": "Emiac\\Models\\AnalysDocument.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:04:54.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "Emiac\\Models\\Appointment.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\Appointment.cs",
+              "RelativeToolTip": "Emiac\\Models\\Appointment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:05:14.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SpecialitesController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\SpecialitesController.cs",
+              "RelativeDocumentMoniker": "Emiac\\Controllers\\SpecialitesController.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\SpecialitesController.cs",
+              "RelativeToolTip": "Emiac\\Controllers\\SpecialitesController.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:21:41.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StatusController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\StatusController.cs",
+              "RelativeDocumentMoniker": "Emiac\\Controllers\\StatusController.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\StatusController.cs",
+              "RelativeToolTip": "Emiac\\Controllers\\StatusController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:23:42.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ResearchDocumentsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\ResearchDocumentsController.cs",
+              "RelativeDocumentMoniker": "Emiac\\Controllers\\ResearchDocumentsController.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\ResearchDocumentsController.cs",
+              "RelativeToolTip": "Emiac\\Controllers\\ResearchDocumentsController.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:21:13.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PatientsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\PatientsController.cs",
+              "RelativeDocumentMoniker": "Emiac\\Controllers\\PatientsController.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\PatientsController.cs",
+              "RelativeToolTip": "Emiac\\Controllers\\PatientsController.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:20:06.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DoctorsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\DoctorsController.cs",
+              "RelativeDocumentMoniker": "Emiac\\Controllers\\DoctorsController.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\DoctorsController.cs",
+              "RelativeToolTip": "Emiac\\Controllers\\DoctorsController.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:19:27.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DirectionsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\DirectionsController.cs",
+              "RelativeDocumentMoniker": "Emiac\\Controllers\\DirectionsController.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\DirectionsController.cs",
+              "RelativeToolTip": "Emiac\\Controllers\\DirectionsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:18:23.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "Emiac\\Controllers\\AppointmentsController.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "Emiac\\Controllers\\AppointmentsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:14:12.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Program.cs",
+              "RelativeDocumentMoniker": "Emiac\\Program.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Program.cs",
+              "RelativeToolTip": "Emiac\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:01:20.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppointmentDocumentsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\AppointmentDocumentsController.cs",
+              "RelativeDocumentMoniker": "Emiac\\Controllers\\AppointmentDocumentsController.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\AppointmentDocumentsController.cs",
+              "RelativeToolTip": "Emiac\\Controllers\\AppointmentDocumentsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:16:07.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AnalysDocumentsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\AnalysDocumentsController.cs",
+              "RelativeDocumentMoniker": "Emiac\\Controllers\\AnalysDocumentsController.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\AnalysDocumentsController.cs",
+              "RelativeToolTip": "Emiac\\Controllers\\AnalysDocumentsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:13:37.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AdminsController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\AdminsController.cs",
+              "RelativeDocumentMoniker": "Emiac\\Controllers\\AdminsController.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Controllers\\AdminsController.cs",
+              "RelativeToolTip": "Emiac\\Controllers\\AdminsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:12:46.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\appsettings.json",
+              "RelativeDocumentMoniker": "Emiac\\appsettings.json",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\appsettings.json",
+              "RelativeToolTip": "Emiac\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAACBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-13T14:07:32.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\Status.cs",
+              "RelativeDocumentMoniker": "Emiac\\Models\\Status.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\Status.cs",
+              "RelativeToolTip": "Emiac\\Models\\Status.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:06:44.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Specialite.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\Specialite.cs",
+              "RelativeDocumentMoniker": "Emiac\\Models\\Specialite.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\Specialite.cs",
+              "RelativeToolTip": "Emiac\\Models\\Specialite.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:06:33.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ResearchDocument.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\ResearchDocument.cs",
+              "RelativeDocumentMoniker": "Emiac\\Models\\ResearchDocument.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\ResearchDocument.cs",
+              "RelativeToolTip": "Emiac\\Models\\ResearchDocument.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:06:17.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "Emiac\\Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\Patient.cs",
+              "RelativeToolTip": "Emiac\\Models\\Patient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:06:04.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "Emiac\\Models\\Doctor.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\Doctor.cs",
+              "RelativeToolTip": "Emiac\\Models\\Doctor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:05:46.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Direction.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\Direction.cs",
+              "RelativeDocumentMoniker": "Emiac\\Models\\Direction.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\Direction.cs",
+              "RelativeToolTip": "Emiac\\Models\\Direction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:05:37.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AppointmentDocument.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\AppointmentDocument.cs",
+              "RelativeDocumentMoniker": "Emiac\\Models\\AppointmentDocument.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\AppointmentDocument.cs",
+              "RelativeToolTip": "Emiac\\Models\\AppointmentDocument.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:05:32.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EMIASContext.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\EMIASContext.cs",
+              "RelativeDocumentMoniker": "Emiac\\Models\\EMIASContext.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0443\u0441\u0442\u0430\u043C\\source\\repos\\Emiac\\Emiac\\Models\\EMIASContext.cs",
+              "RelativeToolTip": "Emiac\\Models\\EMIASContext.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAUwLMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:04:40.141Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 48,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
